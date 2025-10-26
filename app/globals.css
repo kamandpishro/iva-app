@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* بقیه استایل‌های اصلی شما در زیر این خطوط خواهند بود */
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
