@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer"
 import Type from "@/components/Type";
+import DailyPackages from '@/components/DailyPackages'
 
 export const metadata = {
   title: "ایوا",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className="flex flex-col h-screen bg-white text-gray-900">
         <Header />
         <Type/>
+        <DailyPackages/>
         <main className="flex-1 overflow-y-auto">{children}</main>
         <Footer/>
       </body>
