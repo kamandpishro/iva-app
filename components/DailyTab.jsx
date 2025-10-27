@@ -5,7 +5,7 @@ export default function DailyTab({ title, items }) {
     <section className="flex flex-col items-center w-full mt-10 mb-8">
 
     <div className="w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[35%] max-w-2xl flex justify-start" dir="rtl">
-    <h2 className="font-bold text-base sm:text-lg text-black mb-4 text-right">
+    <h2 className="font-bold text-base sm:text-lg text-black  mb-4 text-right">
         {title}
     </h2>
     </div>
@@ -25,11 +25,11 @@ export default function DailyTab({ title, items }) {
           <Image
             src="/assets/packages/mci-logo.svg"
             alt="mci"
-            width={28}
-            height={28}
+            width={40}
+            height={40}
             className="w-7 h-7 sm:w-8 sm:h-8"
           />
-          <span className="text-xs sm:text-sm text-gray-800 font-medium leading-tight">
+          <span className="text-xs sm:text-sm text-gray-800 font-bold leading-tight">
             {pkg.title}
           </span>
         </div>
