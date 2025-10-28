@@ -1,8 +1,13 @@
-import Image from "next/image"
+'use client'
+
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 
 export default function Header() {
+    const router = useRouter();
     return(
-        <div className="flex bg-white rounded-lg  items-center justify-center gap-64 px-4 py-2">
+        <div dir="rtl" className="flex relative bg-white rounded-lg  items-center  px-4 py-2">
             <Image 
             src="/assets/header/logo.svg"  
             alt="ایوا"   
@@ -10,11 +15,13 @@ export default function Header() {
             height={40}
             priority
             />
-            <h4 className="text-gray-800  font-bold text-4xl">بسته اینترنتی</h4>
+            <h4 className="text-gray-800  font-bold text-4xl absolute left-1/2 -translate-x-1/2">بسته اینترنتی</h4>
             <Image src="/assets/header/back-icon.svg" 
             alt="بازگشت"
              width={24}
              height={24}
+             onClick={()=> router.back()}
+             className="cursor-pointer ms-auto hover:scale-110"
             />
 
         </div>
