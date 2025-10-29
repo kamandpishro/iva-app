@@ -1,5 +1,5 @@
-import MonthlyPackages from "@/components/MonthlyPackages";
+import Monthly from "@/components/Monthly";
 
 export default function MontlyPage(){
-    return<MonthlyPackages/>
+    return<Monthly/>
 }

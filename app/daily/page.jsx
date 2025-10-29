@@ -1,5 +1,5 @@
-import DailyPackages from "@/components/DailyPackages";
+import Daily from "@/components/Daily";
 
 export default function DailyPage() {
-  return <DailyPackages />;
+  return <Daily />;
 }

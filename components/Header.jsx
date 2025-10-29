@@ -15,7 +15,7 @@ export default function Header() {
             height={40}
             priority
             />
-            <h4 className="text-gray-800  font-bold text-4xl absolute left-1/2 -translate-x-1/2">بسته اینترنتی</h4>
+            <h4 className="text-gray-800  font-bold text-4xl absolute left-1/2 -translate-x-1/2">بسته اینترنت</h4>
             <Image src="/assets/header/back-icon.svg" 
             alt="بازگشت"
              width={24}

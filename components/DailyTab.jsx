@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function DailyTab({ title, items }) {
   return (
-    <section className="flex flex-col items-center w-full mt-10 mb-8">
+    <section className="flex flex-col items-center w-full  mb-8">
 
     <div className="w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[35%] max-w-2xl flex justify-start" dir="rtl">
     <h2 className="font-bold text-base sm:text-lg text-black  mb-4 text-right">

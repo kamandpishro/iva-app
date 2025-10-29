@@ -1,13 +1,9 @@
 "use client";
 import Image from "next/image";
-import { useRouter, usePathname } from "next/navigation";
-
 
 export default function Footer() {
 
    const router = useRouter();
-   const pathname = usePathname();
-   const isActive = pathname === "/mystation";
     return(
         <div className="flex items-center justify-center gap-64 bg-white rounded-lg px-4 py-2 ">
           <div  onClick={()=> router.push("/mystation")}   className="flex flex-col items-center justify-center cursor-pointer">

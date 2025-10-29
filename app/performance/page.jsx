@@ -1,5 +1,5 @@
-import PerformancePage from "@/components/PerformancePage";
+import Performance from "@/components/Performance";
 
 export default function Performance() {
-  return <PerformancePage />;
+  return <Performance />;
 }

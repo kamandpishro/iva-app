@@ -1,5 +1,5 @@
-import WeeklyPackages from "@/components/WeeklyPackages";
+import Weekly from "@/components/Weekly";
 
 export default function weekyPage(){
-    return<WeeklyPackages/>
+    return<Weekly/>
 }
