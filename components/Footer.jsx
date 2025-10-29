@@ -1,28 +1,75 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
+  const router = useRouter();
 
-   const router = useRouter();
-    return(
-        <div className="flex items-center justify-center gap-64 bg-white rounded-lg px-4 py-2 ">
-          <div  onClick={()=> router.push("/mystation")}   className="flex flex-col items-center justify-center cursor-pointer">
-             <Image src={"/assets/bottom-nav/home.svg"} alt="جایگاه من" width={28}  height={28}/>
-             <span className="text-xs mt-1 font-medium">جایگاه من</span>
-          </div>
-          <div onClick={()=>router.push("/performance")} className="flex flex-col items-center justify-center cursor-pointer ">
-             <Image src={"/assets/bottom-nav/performance.svg"} alt="آمار عملکرد" width={50} height={50}/>
-             <span  className="text-xs mt-1 font-medium text-gray-800">آمار عملکرد</span>
-          </div>
-           <div onClick={()=>router.push("/notifications")} className="flex flex-col items-center justify-center cursor-pointer">
-             <Image src={"/assets/bottom-nav/notifications.svg"} alt="اطلاعیه ها" width={28} height={28}/>
-              <span  className="text-xs mt-1 font-medium text-gray-800">اطلاعیه ها</span>
-           </div>
-           <div  onClick={()=>router.push("/profile")} className="flex flex-col items-center justify-center cursor-pointer">
-            <Image src={"/assets/bottom-nav/profile.svg"} alt="پروقایل کاربری" width={28} height={28}/>
-             <span  className="text-xs mt-1 font-medium text-gray-800">پروقایل کاربری</span>
-           </div>
-        </div>
-    );
+  return (
+    <footer className="footer flex items-center justify-between sm:justify-evenly bg-white rounded-t-xl px-4 sm:px-6 py-3 fixed bottom-0 left-0 w-full z-50 shadow-[0_-2px_6px_rgba(0,0,0,0.05)]">
+      <div
+        onClick={() => router.push("/mystation")}
+        className="footer__item flex flex-col items-center justify-center cursor-pointer"
+      >
+        <Image
+          src="/assets/bottom-nav/home.svg"
+          alt="home"
+          width={26}
+          height={26}
+          className="footer__icon w-6 h-6 sm:w-7 sm:h-7"
+        />
+        <span className="footer__text text-[10px] sm:text-xs mt-1 font-medium text-gray-800">
+          جایگاه من
+        </span>
+      </div>
 
+      <div
+        onClick={() => router.push("/performance")}
+        className="footer__item flex flex-col items-center justify-center cursor-pointer"
+      >
+        <Image
+          src="/assets/bottom-nav/performance.svg"
+          alt="performance"
+          width={50}
+          height={50}
+          className="footer__icon w-10 h-10 sm:w-12 sm:h-12"
+        />
+        <span className="footer__text text-[10px] sm:text-xs mt-1 font-medium text-gray-800">
+          آمار عملکرد
+        </span>
+      </div>
+
+      <div
+        onClick={() => router.push("/notifications")}
+        className="footer__item flex flex-col items-center justify-center cursor-pointer"
+      >
+        <Image
+          src="/assets/bottom-nav/notifications.svg"
+          alt="notifications"
+          width={28}
+          height={28}
+          className="footer__icon w-6 h-6 sm:w-7 sm:h-7"
+        />
+        <span className="footer__text text-[10px] sm:text-xs mt-1 font-medium text-gray-800">
+          اطلاعیه‌ها
+        </span>
+      </div>
+
+      <div
+        onClick={() => router.push("/profile")}
+        className="footer__item flex flex-col items-center justify-center cursor-pointer"
+      >
+        <Image
+          src="/assets/bottom-nav/profile.svg"
+          alt="profile"
+          width={28}
+          height={28}
+          className="footer__icon w-6 h-6 sm:w-7 sm:h-7"
+        />
+        <span className="footer__text text-[10px] sm:text-xs mt-1 font-medium text-gray-800">
+          پروفایل کاربری
+        </span>
+      </div>
+    </footer>
+  );
 }

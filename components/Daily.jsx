@@ -15,7 +15,7 @@ export default function DailyPackages() {
   ];
 
   return (
-    <div className="flex flex-col items-center py-10">
+    <div className="daily-packages flex flex-col items-center py-10">
       <DailyTab title="یک‌روزه" items={Packages} />
       <DailyTab title="سه‌روزه" items={ThreedayPackages} />
     </div>
